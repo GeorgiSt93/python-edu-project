@@ -43,6 +43,22 @@
                         border: 1px solid rgba(0,0,0,0.05);
                         z-index: 100;
                     }
+            @media (min-width: 992px) {
+                .sidebar-box {
+                    position: -webkit-sticky;
+                    position: sticky;
+                    top: 20px;
+                    transform: none; 
+                            }
+                    }
+            @media (max-width: 991px) {
+                .sidebar-box {
+                    position: static;
+                    margin-top: 30px;
+                    transform: none;
+                    width: 100%;
+                            }
+                    }
     </style>
 </head>
 <body>
@@ -207,3 +223,4 @@
 </body>
 
 </html>
+
