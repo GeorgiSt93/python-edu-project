@@ -7,8 +7,18 @@
     <link rel="icon" type="image/png" href="resursi/images/logo_svg.svg">
     <link href="resursi/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        :root { --main-color: #2c3e50; 
-                --accent-color: #3498db; }
+        * {
+        box-sizing: border-box; /* Включва padding и border в общата ширина */
+        }
+
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden; /* Спира хоризонталния скрол */
+            margin: 0;
+            padding: 0;
+        }
+            :root { --main-color: #2c3e50; 
+                    --accent-color: #3498db; }
         body { 
                     background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), 
                       url('resursi/images/logo_svg.svg'); 
@@ -223,4 +233,5 @@
 </body>
 
 </html>
+
 
