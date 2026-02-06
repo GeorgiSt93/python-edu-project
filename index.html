@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПБО по Програмиране с Python</title>
+    <link rel="icon" type="image/png" href="resursi/images/logo_svg.svg">
+    <link href="resursi/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root { --main-color: #2c3e50; 
+                --accent-color: #3498db; }
+        body { 
+                    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), 
+                      url('resursi/images/logo_svg.svg'); 
+                    background-attachment: fixed; 
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    margin: 0;
+                    padding: 0; }
+
+        .hero-section { background-image: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), 
+                      url('resursi/images/header-bg.jpg'); 
+                      background-size: cover; 
+                      background-position: center;
+                      color: white; 
+                      padding: 100px 0; 
+                      border-bottom: 5px solid var(--accent-color); }
+
+        .card-lesson {  transition: transform 0.3s; 
+                        border: none; 
+                        box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .card-lesson:hover { transform: translateY(-5px); }
+        .sidebar-box { 
+                       position: relative;
+                       transform: translate(0%, 39%);
+                       background: white; 
+                       padding: 20px; 
+                       border-radius: 10px; 
+                       box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="resursi/images/logo_svg.svg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top me-2">
+            Проектно-базирано обучение по програмиране с Python</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Начало</a></li>
+                <li class="nav-item"><a class="nav-link" href="#lessons">Уроци</a></li>
+                <li class="nav-item"><a class="nav-link" href="#project">Мини-проект</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="hero-section text-center">
+    <div class="container">
+        <h1 class="display-4">Проектно-базирано обучение по програмиране с Python</h1>
+        <p class="lead">Разработване на практически умения чрез методически насоки и реални задачи</p>
+    </div>
+</header>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="row mb-5">
+    <div class="col-12">
+        <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-white shadow-sm border-start border-5 border-success">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="display-6 fw-bold">Какво е Проектно-базирано обучение (ПБО)?</h2>
+                    <p class="lead my-3">
+                        Това е иновативен методически подход, при който учениците придобиват знания и умения чрез работа върху 
+                        <strong>реални, значими предизвикателства</strong>.
+                    </p>
+                    <p>
+                        В контекста на програмирането с <strong>Python</strong>, ПБО превръща сухия синтаксис в инструмент за създаване. 
+                        Вместо да решават изолирани логически задачи, учениците изграждат цялостен софтуерен продукт стъпка по стъпка.
+                    </p>
+                </div>
+                <div class="col-lg-4 d-flex align-items-center justify-content-center">
+                    <div class="text-center">
+                        <span style="font-size: 5rem;">💡</span>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Активност</h5>
+                    <p class="small">Ученикът е в центъра на учебния процес.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Автентичност</h5>
+                    <p class="small">Задачите са свързани с реални практически нужди.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Краен продукт</h5>
+                    <p class="small">Обучението завършва с работещо приложение.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="col-lg-8">
+            <h2 id="lessons" class="mb-4">Уроци</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card card-lesson h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Урок 1: Основи на синтаксиса</h5>
+                            <p class="card-text text-muted">Основи на езика, среда за разработване (IDE) и създаване на файлове. Извеждане на текст на конзолата.</p>
+                            <a href="uroci/u1.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">Към урока</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card card-lesson h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Урок 2: Променливи и типове данни</h5>
+                            <p class="card-text text-muted">Създаване и работа с променливи, обработка на данни и тяхното съхранение в паметта на компютъра.</p>
+                            <a href="uroci/u2.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">Към урока</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+            <div class="card card-lesson h-100">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Урок 3: Условни оператори</h5>
+                    <p class="card-text text-muted">Оператори за сравнение, вземане на решения в програмата с if-else логика за конвертора.</p>
+                    <a href="uroci/u3.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">Към урока</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card card-lesson h-100">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Урок 4: Цикли</h5>
+                    <p class="card-text text-muted">Повторение на действия и обхождане на елементи при конвертиране.</p>
+                    <a href="uroci/u4.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">Към урока</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card card-lesson h-100">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Урок 5: Функции</h5>
+                    <p class="card-text text-muted">Деклариране и извикване на Функции</p>
+                    <a href="uroci/u5.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">Към урока</a>
+                </div>
+            </div>
+        </div>
+
+         <div class="col-md-6">
+            <div class="card card-lesson h-100">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Мини-проект</h5>
+                    <p class="card-text text-muted">Организиране на кода и финализиране на конвертора на бройни системи.</p>
+                    <a href="uroci/min_p.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">Към урока</a>
+                </div>
+            </div>
+        </div>
+                </div>
+
+            <div class="mt-5 p-4 bg-light border-start border-4 border-primary shadow-sm">
+                <h3 id="project">Финална цел: Мини-проект "Конвертор на бройни системи"</h3>
+                <p>Всеки от петте урока е стъпка към изграждането на работеща програма. В края на обучението учениците ще имат собствен софтуер, написан на Python.</p>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="sidebar-box mt-4 mt-lg-0">
+                <h4>Методически насоки</h4>
+                <p class="small text-muted">Проектно-базираното обучение (ПБО) поставя ученика в ролята на активен откривател.</p>
+                <ul class="list-group list-group-flush small">
+                    <li class="list-group-item">✓ Практическа приложимост</li>
+                    <li class="list-group-item">✓ Критично мислене</li>
+                    <li class="list-group-item">✓ Резултатно ориентиране</li>
+                </ul>
+                <hr>
+                <h5>Ресурси за сваляне</h5>
+                <a href="uroci/Menual.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-success btn-sm w-100 mb-2">Инструкции (PDF)</a><br>
+                <a href="files/CALC.txt" class="btn btn-warning btn-sm w-100">Код към уроците</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="text-center py-4 bg-dark text-white mt-5">
+    <p>&copy; 2025 Георги Стойчев - 246974 <br> РУ"Ангел Кънчев"<br>Информатика и информационни технологии в образованието</p>
+</footer>
+
+<script src="resursi/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

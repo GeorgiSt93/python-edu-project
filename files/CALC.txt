@@ -1,0 +1,74 @@
+# Речник за превръщане на стойности 10-15 в букви A-F
+HEX_CHISLA = "0123456789ABCDEF"
+
+
+def bin_to_dec(b):
+    desetichno = 0
+    for i, digit in enumerate(reversed(b)):
+        if digit == '1':
+            desetichno += 2 ** i
+    return desetichno
+
+
+def dec_to_bin(n):
+    if n == 0: return "0"
+    res = ""
+    while n > 0:
+        res = str(n % 2) + res
+        n //= 2
+    return res
+
+
+def hex_to_dec(h):
+    h = h.upper()
+    desetichno = 0
+    for i, char in enumerate(reversed(h)):
+        val = HEX_CHISLA.index(char)
+        dec += val * (16 ** i)
+    return desetichno
+
+
+def dec_to_hex(n):
+    if n == 0: return "0"
+    res = ""
+    while n > 0:
+        res = HEX_CHISLA[n % 16] + res
+        n //= 16
+    return res
+
+
+# Главна променлива за цикъла
+continue_program = 'y'
+
+while continue_program.lower() == 'y':
+    print("\n=================================")
+    print("   КОНВЕРТОР НА БРОЙНИ СИСТЕМИ   ")
+    print("=================================")
+    print("1. Двоична към Десетична")
+    print("2. Десетична към Двоична")
+    print("3. Шестнадесетична към Десетична")
+    print("4. Десетична към Шестнадесетична")
+    print("---------------------------------")
+
+    izbor = int(input("Изберете опция (1-4): "))
+
+    if izbor == 1:
+        v = input("Въведете двоично число: ")
+        print(f"-> Резултат (Десетична): {bin_to_dec(v)}")
+    elif izbor == 2:
+        v = int(input("Въведете десетично число: "))
+        print(f"-> Резултат (Двоична): {dec_to_bin(v)}")
+    elif izbor == 3:
+        v = input("Въведете шестнадесетично число: ")
+        print(f"-> Резултат (Десетична): {hex_to_dec(v)}")
+    elif izbor == 4:
+        v = int(input("Въведете десетично число: "))
+        print(f"-> Резултат (Шестнадесетична): {dec_to_hex(v)}")
+    else:
+        print("Невалиден избор!")
+
+    # Питаме потребителя дали иска да продължи
+    print("---------------------------------")
+    continue_program = input("Искате ли да конвертирате ново число? (y/n): ")
+
+print("\nПрограмата приключи. Довиждане!")
